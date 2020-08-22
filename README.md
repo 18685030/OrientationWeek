@@ -9,4 +9,4 @@ This repo is a development area for the SoCs orientation week materials for stud
 
 ## Note
 
-This is nothing to do with the UoL SU directly and is a seperate set of activities to compliment and help new starters make new friends and feel comfertable with the SoCS as quickly as possible. Currently, these activties are time tabled around 15:00-18:00 after the main days events. 
+This is nothing to do with the UoL SU directly and is a seperate set of activities to compliment and help new starters make new friends and feel comfertable with the SoCS as quickly as possible. Currently, these activities are timetabled around 15:00-18:00 after the main days events. 
