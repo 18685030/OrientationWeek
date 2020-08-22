@@ -1,4 +1,4 @@
-# UoL Orientation Week
+# UoL Orientation Week - 5th - 9th October 2020
 
 ## Student Engagement
 
