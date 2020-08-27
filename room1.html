@@ -3,23 +3,24 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name=viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/room1.css">
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
-	<script type "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 
 <body> 
 
-<a href="index.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
+
+<a href="map.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
 
 <div id="cursor"></div>
 
 <div class="part1">
-FIND THE CODE, PUT IN THE RIGHT ORDER AND RUN IN A PYTHON SHELL FOR THE RESULT YOU NEED
+Find the code, put it in the right order and run in a python shell for the result you need.
 </div>
 
 <div class="part5">
@@ -44,6 +45,8 @@ result = hashlib.sha1(str3.encode())
 # import library <br>
 import hashlib 
 </div>
+
+<input type="text" id="answer" placeholder="Check Answer.." onkeyup="getAnswer()">
 
 
 </body>
