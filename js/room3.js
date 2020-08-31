@@ -157,7 +157,7 @@ function checklength(i) {
     return i;
 }
 var minutes, seconds, count, counter, timer;
-count = 11; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
+count = 10; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
 counter = setInterval(timer, 1000);
 
 // creates count down timer in minutes and seconds
