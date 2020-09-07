@@ -644,8 +644,10 @@ class Labirynthe {
   }
   curseurEnfonce(e) {
     this.curseur.cliquePos = {
+
       x: this.curseur.pos.x,
       y: this.curseur.pos.y
+
     };
     this.curseur.active = true;
     this.curseur.efCorps.style.left = this.curseur.cliquePos.x - 25 + "px";
