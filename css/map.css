@@ -2,6 +2,22 @@ body{
   background-color: #26304a;
 }
 
+div.question {
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
 .ui-tooltip, .arrow:after {
     background: black;
     border: 2px solid black;
@@ -58,12 +74,13 @@ body{
   top: 0;
   bottom: 0;
   width: 100%;
-  
   svg {
     width: 100%;
     height: 100%;
   }
 }
+
+.container {   display: flex;   justify-content: center; }
 
 .blue{
   fill:blue;
@@ -140,11 +157,11 @@ input {
 }
 
 .fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 @keyframes fadeIn {
   0% {
@@ -190,4 +207,210 @@ input {
     opacity:1;
 }
 
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#amc:hover #desc{
+  visibility:visible;
+}
+
+// above this line, tooltip styling
+// below this line, SVG styling
+
+.picture {
+  border: 1px solid #666;
+  background:#eef;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blue{fill:blue;}
+.purple{fill:rebeccapurple;}
+.orange{fill:darkorange;}
+.green{fill:green;}
+.kiosk{fill:darkred;}
+.anchor{fill:teal;}
+path:hover{opacity: 0.7;}
+
+//below this line, description style
+
+.store{
+min-width: 30em; 
+max-width: 50%; 
+background-color: #ffd382; 
+border-radius: 1em;
+overflow: auto;
+}
+
+.name{
+margin-left: 2%; 
+font: bold 2em sans-serif;
+}
+
+.number{
+float: right;
+margin-right: 0.5em;
+}
+
+.description{
+min-width: 30em; 
+margin: 1%; 
+max-width: 100%;
+text-align: justify; 
+}
+span.des{
+font-size: 1.5em;
+}
+
+//testing area
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+/* Add animation (Standard syntax) */
+@keyframes example {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+
+
+
+
+
+
+
+/* The modal's background */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Display the modal when targeted */
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+/* The modal box */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* The modal's content */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Add animation */
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+/* The button used to close the modal */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+header {
+  background-color: #5cb85c;
+  font-size: 25px;
+  color: white;
+}
+
+footer {
+  background-color: #5cb85c;
+  font-size: 20px;
+  color: white;
+}
+
+.name{
+margin-left: 2%; 
+font: bold 1.5em sans-serif;
+}
+
+.number{
+float: right;
+margin-right: 0.5em;
+}
+
+  .ui-tooltip {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+  }
+
+.modal-content{
+  max-width:50%;
+}
 
