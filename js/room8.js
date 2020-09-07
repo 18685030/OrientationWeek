@@ -642,13 +642,24 @@ class Labirynthe {
     document.body.addEventListener("mousedown", event => this.curseurEnfonce(event), false);
     document.body.addEventListener("mouseup", event => this.curseurLeve(event), false);
   }
+
   curseurEnfonce(e) {
     this.curseur.cliquePos = {
 
       x: this.curseur.pos.x,
-      y: this.curseur.pos.y
+      y: this.curseur.pos.y,
 
     };
+
+      //stops the curser from activtaing when at home button
+      if(this.curseur.pos.y < 50)
+      {
+            // var text; //sets the variable for the text output
+            // text = "Top of page";
+            // document.getElementById("results").innerHTML = text; //inserts 'text' into the yourscore ID element.
+            curseurLeve()
+      }
+
     this.curseur.active = true;
     this.curseur.efCorps.style.left = this.curseur.cliquePos.x - 25 + "px";
     this.curseur.efCorps.style.top = this.curseur.cliquePos.y - 25 + "px";
@@ -657,6 +668,7 @@ class Labirynthe {
     this.curseur.distCorps.style.top = this.curseur.cliquePos.y - 15 + "px";
     this.curseur.distCorps.style.visibility = "visible";
   }
+
   curseurLeve() {
     this.curseur.active = false;
     this.curseur.distCorps.style.visibility = "hidden";
@@ -664,6 +676,7 @@ class Labirynthe {
     this.force.x = 0;
     this.force.y = 0;
   }
+
   curseurActif(e) {
     this.curseur.pos.x = e.pageX;
     this.curseur.pos.y = e.pageY;
@@ -689,6 +702,7 @@ class Labirynthe {
       this.force.y = (newY - this.curseur.cliquePos.y) / 200;
     }
   }
+
   chargerTerrain() {
     this.terrain = this.niveaux[this.niveauActuel];
     this.terrain.dimension = {
@@ -948,7 +962,7 @@ class Labirynthe {
 
 // Check answer to challange
 
-var answer = "0101110110";
+var answer = "374"; //0101110110 in binary
 
 function getAnswer() {
   var x = document.getElementById("answer");
