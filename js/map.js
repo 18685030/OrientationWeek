@@ -54,17 +54,17 @@ function roomsComplete() {
                 document.getElementById("imglock8").src = "assets/unlock.png";
             }
 
-            //Shows trophy if all tasks have been completed
-            // if(room1 == 'complete' && room2 == 'complete' && room3 == 'complete' && room4 == 'complete' && room5 == 'complete' && room6 == 'complete' && room7 == 'complete' && room8 == 'complete'){
-            //     document.getElementById("trophy").style.visibility = "visible";
-            //     document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
-            // }
-
-            //Test to show how the end results works
-            if(room6 == 'complete' && room3 == 'complete'){
+            // //Shows trophy if all tasks have been completed
+            if(room1 == 'complete' && room2 == 'complete' && room3 == 'complete' && room4 == 'complete' && room5 == 'complete' && room6 == 'complete' && room7 == 'complete' && room8 == 'complete'){
                 document.getElementById("trophy").style.visibility = "visible";
                 document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
             }
+
+            // //Test to show how the end results works
+            // if(room6 == 'complete' && room3 == 'complete'){
+            //     document.getElementById("trophy").style.visibility = "visible";
+            //     document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
+            // }
 
         }
 
@@ -103,49 +103,49 @@ $(".closeBtn").click(function(){
 //Useful links to activties
 function displayCup() {
 
-    document.getElementById("results").textContent = "Room 1: This is a cup"
+    document.getElementById("results").textContent = "Room 1: They only go one way"
 
 }
 
 function displayTable() {
 
-    document.getElementById("results").textContent = "Room 2: This is a Table"
+    document.getElementById("results").textContent = "Room 2: This task is golden!"
 
 }
 
 function displayMonitor() {
 
-    document.getElementById("results").textContent = "Room 3: This is a Monitor"
+    document.getElementById("results").textContent = "Room 3: SoCS was the only choice!"
 
 }
 
 function displayLamphead() {
 
-    document.getElementById("results").textContent = "Room 4: This is a lamphead"
+    document.getElementById("results").textContent = "Room 4: Need to fight for this answer!"
 
 }
 
 function displayFlatBook3() {
 
-    document.getElementById("results").textContent = "Room 5: This is knob 1"
+    document.getElementById("results").textContent = "Room 5: Don't retire yet!"
 
 }
 
 function displayPenstand() {
 
-    document.getElementById("results").textContent = "Room 6: This is a penstand"
+    document.getElementById("results").textContent = "Room 6: The answer to everything!"
 
 }
 
 function displaySlantBook() {
 
-    document.getElementById("results").textContent = "Room 7: This is a slanted book"
+    document.getElementById("results").textContent = "Room 7: Half of a character!"
 
 }
 
 function displayWindow() {
 
-    document.getElementById("results").textContent = "Room 8: This is a window"
+    document.getElementById("results").textContent = "Room 8: It's not a binary choice!"
 
 }
 
@@ -157,9 +157,7 @@ function displayTrophy() {
 
 
 
-
-
-//Links for interest with no activties
+//Links for interest with no activities
 function displayFloor() {
 
     document.getElementById("results").textContent = "No time for sitting down !"

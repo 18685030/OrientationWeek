@@ -155,7 +155,7 @@ function checklength(i) {
     return i;
 }
 var minutes, seconds, count, counter, timer;
-count = 11; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
+count = 13; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
 counter = setInterval(timer, 1000);
 
 // creates count down timer in minutes and seconds
@@ -171,7 +171,7 @@ function timer() {
     }
     document.getElementById("timer").innerHTML = 'Time left: ' + seconds + ' ';
 
-// compares scores with 2 secs remainig to find last score and compare to highest score
+// compares scores with 1 secs remainig to find last score and compare to highest score
 
     if (count === 1) {
 
