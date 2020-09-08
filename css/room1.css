@@ -1,5 +1,5 @@
 body{
-  background-color: #26304a;
+  background-color: #444;
   user-select: none; //allows a user to selcet or not sleect the text
 }
 
@@ -21,7 +21,7 @@ div.part1 {
   position: absolute;
   line-height: 2;
   top: 10%;
-  color: #26304a;
+  color: #444;
   display: inline-block;
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
@@ -30,7 +30,7 @@ div.part1 {
 div.part5 {
   position: absolute;
   top: 25%;
-  color: #26304a;
+  color: #444;
   display: inline-block;
   font-family: 'Major Mono Display', monospace;
 }
@@ -38,7 +38,7 @@ div.part5 {
 div.part3 {
   position: absolute;
   top: 45%;
-  color: #26304a;
+  color: #444;
   display: inline-block;
   font-family: 'Major Mono Display', monospace;
 }
@@ -47,7 +47,7 @@ div.part4 {
   position: absolute;
   top: 65%;
   right: 0px;
-  color: #26304a;
+  color: #444;
   display: inline-block;
   font-family: 'Major Mono Display', monospace;
   text-align: right;
@@ -58,7 +58,7 @@ div.part2 {
   top: 85%;
   right: 0px;
   display: inline-block;
-  color: #26304a;
+  color: #444;
   font-family: 'Major Mono Display', monospace;
   text-align: right;
 }

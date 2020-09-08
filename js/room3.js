@@ -12,7 +12,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
   bgReady = true;
 };
-bgImage.src = "assets/background.jpg"; //get background image
+bgImage.src = "assets/background.gif"; //get background image
 
 // Hero image
 var heroReady = false;
@@ -22,6 +22,7 @@ heroImage.onload = function () {
 };
 heroImage.src = "assets/hero.png"; //get the hero image 
 
+
 // Monster image
 var monsterReady = false;
 var monsterImage = new Image();
@@ -29,8 +30,6 @@ monsterImage.onload = function () {
   monsterReady = true;
 };
 monsterImage.src = "assets/monster.png"; //get the moster/alien image
-monsterImage.src.height = 100;
-monsterImage.src.width = 100;
 
 
 // Game objects
@@ -115,10 +114,9 @@ var render = function () {
   // Score text styles
   ctx.fillStyle = "white";
   ctx.font = "25px Helvetica";
-  ctx.font = "25px Helvetica";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
-  ctx.fillText("Aliens caught: " + monstersCaught, 32, 32); //fill canvess with the score 'monsterscaught'
+  ctx.fillText("TOTAL: " + monstersCaught, 32, 32); //fill canvess with the score 'monsterscaught'
 
 };
 
@@ -157,7 +155,7 @@ function checklength(i) {
     return i;
 }
 var minutes, seconds, count, counter, timer;
-count = 10; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
+count = 11; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
 counter = setInterval(timer, 1000);
 
 // creates count down timer in minutes and seconds
@@ -171,7 +169,7 @@ function timer() {
         clearInterval(counter);
         return;
     }
-    document.getElementById("timer").innerHTML = 'Time left: ' + minutes + ':' + seconds + ' ';
+    document.getElementById("timer").innerHTML = 'Time left: ' + seconds + ' ';
 
 // compares scores with 2 secs remainig to find last score and compare to highest score
 
@@ -187,7 +185,7 @@ function timer() {
 
 // When count is at 0 secs the game will reload and repeat
 
-    if (count === 0 && monstersCaught < 7) { //when game hits 0 sec then it restarts
+    if (count === 0 && monstersCaught < 6) { //when game hits 0 sec then it restarts
         location.reload();
     }
 }
@@ -206,6 +204,7 @@ function getAnswer() {
         return false;
     }else{
         document.getElementById('answer').style.backgroundColor = "green"; //when answer is correct turn green
+        localStorage.setItem("room3", "complete");
     };
 }
 

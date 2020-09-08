@@ -122,6 +122,7 @@ function getAnswer() {
         return false;
     }else{
         document.getElementById('answer').style.backgroundColor = "green"; //when answer is correct turn green
+        localStorage.setItem("room7", "complete");
     };
 }
 

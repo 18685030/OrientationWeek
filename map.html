@@ -7,7 +7,11 @@
 	<link rel="stylesheet" href="css/map.css">
 	<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
 	<title>Map</title>
 
@@ -16,48 +20,107 @@
 
 <body> 
 
-<a href="index.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto;"></a>
+<a href="index.html"><img src="assets/home.png" style="float: right; width: 40px; height: auto; z-index: 555;"></a>
 
-<div class="question">
-Enter the rooms to see if you can solve the clues 
-</div>
+<div class="message"><b>Welcome to your escape room! Look around and solve the 8 clues. The team with the most tasks solved in the quickest time wins! Good luck!!</div>
 
-<div class="picture fade-in">
-  <svg style="width:100%;height:100%;" viewBox="0 0 1800.000000 1100.000000" preserveAspectRatio="xMidYMid meet">
-    <defs id="svgEditorDefs">
-      <polygon id="svgEditorPolygonDefs" stroke="black" fill="white" style="vector-effect: non-scaling-stroke; stroke-width: 1px;"/>
-      <line id="svgEditorLineDefs" stroke="black" style="fill: none; vector-effect: non-scaling-stroke; stroke-width: 1px;"/>
-      <path id="svgEditorClosePathDefs" stroke="black" fill="khaki" style="vector-effect: non-scaling-stroke; stroke-width: 1px;"/>
-    </defs>
+<div class="wrapper">
 
-    <!-- ========================================= -->
-   
-    <!-- BEGIN MAP -->
-    <g transform="translate(0.0000,1200.000000) scale(0.3000,-0.30000)" fill="#000000" stroke="none">
+    <div class="lock">
+        <div class="lock1" id="lock1"><img id="imglock1" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room1</p></div>
+        <div class="lock2" id="lock2"><img id="imglock2" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room2</p></div>
+        <div class="lock3" id="lock3"><img id="imglock3" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room3</p></div>
+        <div class="lock4" id="lock4"><img id="imglock4" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room4</p></div>
+        <div class="lock5" id="lock5"><img id="imglock5" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room5</p></div>
+        <div class="lock6" id="lock6"><img id="imglock6" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room6</p></div>
+        <div class="lock7" id="lock7"><img id="imglock7" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room7</p></div>
+        <div class="lock8" id="lock8"><img id="imglock8" src="assets/lock.png" style=" width: 40px; height: auto; z-index: 555;"><p style="display: inline-block;"> :Room8</p></div>
+    </div>
 
-      <!-- orange -->
-	<a href="room2.html"><title style="font-size: 50px;">Room 2</title><path id="MyPath" class="purple" d="M2190 2825 l-105 -105 205 -205 205 -205 192 192 193 193 -117 117 -118 118 -175 0 -175 0 -105 -105z"/></a>
-	<a href="room3.html"><title>Room 3</title><path class="green" class="room1" d="M2727 2492 l-207 -207 115 -115 115 -115 0 -95 0 -95 270 270 270 270 -147 147 c-125 125 -152 148 -178 148 -26 0 -59 -29 -238 -208z"/></a>
-	<a href="room5.html"><title>Room 5</title><path class="blue" d="M1935 2570 l-120 -120 223 -223 222 -222 0 -68 0 -67 230 0 230 0 0 83 0 82 -328 328 c-180 180 -329 327 -332 327 -3 0 -59 -54 -125 -120z"/></a>
-	<a href="room6.html"><title>Room 6</title><path class="red" d="M1622 2257 l-162 -162 218 -218 217 -217 128 0 127 0 0 68 c0 66 1 69 40 107 37 36 40 43 40 95 l0 55 -218 218 c-119 119 -219 217 -222 217 -3 0 -78 -73 -168 -163z"/></a>
-	<a href="room4.html"><title>Room 4</title><path class="purple" d="M3373 2188 l-63 -63 -58 58 c-32 31 -62 57 -67 57 -6 0 -93 -83 -195 -185 l-185 -185 378 0 377 0 0 90 0 90 85 0 85 0 0 31 c0 25 -14 45 -67 100 l-66 69 -81 0 -81 0 -62 -62z"/></a>
-	<a href="room7.html"><title>Room 7</title><path class="green" d="M1270 1905 l-165 -165 108 -108 107 -107 0 -198 0 -197 -55 0 -55 0 2 -412 3 -413 288 -3 287 -2 0 140 0 140 45 0 45 0 -2 528 -1 527 -221 217 -221 218 -165 -165z"/></a>
-	<a href="room8.html"><title>Room 8</title><path class="orange" d="M2207 1812 c-25 -26 -27 -35 -27 -105 l0 -77 -135 0 -135 0 0 -540 0 -540 -45 0 -45 0 0 -125 0 -125 833 0 832 0 123 123 122 122 0 648 0 647 -748 0 -748 0 -27 -28z"/></a>
-	<a href="room1.html"><title>Room 1</title><path class="red" d="M1017 1652 l-57 -58 0 -267 0 -267 110 0 110 0 0 50 0 50 55 0 55 0 0 173 -1 172 -102 103 c-56 56 -104 102 -107 102 -3 0 -31 -26 -63 -58z"/></a>
-            
-	</g>
+        
+        <div class="shelf-wrapper">
+            <div class="shelf1">
+                <a href="room7.html"><div id="slantbook" onMouseover="displaySlantBook();"></div></a>
+                <div id="flatbook" onMouseover="displayFlatBook();"></div>
 
-</svg>
+            </div>
+            <div class="shelf2">
+                <a href="room5.html"><div id="flatbook3" onMouseover="displayFlatBook3();"></div></a>
+                <a href="room6.html"><div class="penstand" onMouseover="displayPenstand();">
+                    <div id="pen"></div>
+                </div></a>
 
-    <!-- END MAP -->
+            </div>
+            <div class="shelfknob">
+                <div class="knob" id="knob1" onMouseover="displayKnob1();"></div>
+                <div class="knob" id="knob2" onclick="clearLocks();" onmouseover="displayKnob2();"></div>
 
+            </div>
 
-</div>
+        </div>
+        <a href="room8.html"><div class="window" onMouseover="displayWindow();">
+            <span id="moon"></span>
+            <!-- <div class="stars">
+                <div id="star1"></div>
+                <div id="star2"></div>
+                <div id="star3"></div>
+                <div id="star4"></div>
+                <div id="star5"></div>
+                <div id="star6"></div>
+                <div id="star7"></div>
+                <div id="star8"></div>
+                <div id="star9"></div>
+                <div id="star10"></div>
+
+            </div> -->
+        </div></a>
+        <div class="container">
+            <a href="room1.html"><div class="cup" onMouseover="displayCup();"></div></a>
+            <a href="room2.html"><div class="table" onMouseover="displayTable();">
+                <span class="handle" id="handle1"></span>
+                <span class="handle" id="handle2"></span>
+                <div id="margintop">
+                    <div class="tableleg" id="table0"></div>
+                    <div class="tableleg" id="table1"></div>
+                    <div class="tableleg" id="table2"></div>
+                    <div class="tableleg" id="table3"></div>
+                    <div class="tableleg" id="table4"></div>
+                    <div class="tableleg" id="table5"></div>
+                    <div class="tableleg" id="table6"></div>
+                    <div class="tableleg" id="table7"></div>
+                </div>
+            </div></a>
+
+            <div class="lamp">
+                <div id="lampjoint"></div>
+                <a href="room4.html"><div class="lamphead" onMouseover="displayLamphead();"></div></a>
+            </div>
+            <a href="room3.html"><div class="monitor" onMouseover="displayMonitor();">
+                <span id="monitor-base"></span>
+            </div></a>
+
+            <div class="semicircle"></div>
+            <div class="floor1" onMouseover="displayFloor();">
+                
+                <div id="results"><p></p></div>
+
+            </div>
+        </div>
+        <!-- <div class="computer">
+            <span id="base"></span>
+        </div> -->
+
+    </div>
 
 
 
 </body>
 
+
 <script src = "js/map.js"></script>
+  
+
+
+</script>
 
 </html>

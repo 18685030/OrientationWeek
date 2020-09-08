@@ -80,7 +80,7 @@ function hidetext(){
 function drawPoints(drawText){
     for (var i = 0; i < points.length; i++) {
         console.log(i);
-        ctx.fillStyle = '#000000';
+        ctx.fillStyle = 'red';
         ctx.beginPath();
         ctx.arc(points[i].x, points[i].y, 30, 0, Math.PI * 2, true);
         ctx.closePath();
@@ -151,7 +151,7 @@ function handlePointClick(point){
 }
 
 function clear(){
-    ctx.fillStyle = '#26304a';
+    ctx.fillStyle = '#444';
     ctx.beginPath();
     ctx.rect(0, 0, width, height);
     ctx.closePath();
@@ -193,6 +193,7 @@ function getAnswer() {
         return false;
     }else{
         document.getElementById('answer').style.backgroundColor = "green"; //when answer is correct turn green
+        localStorage.setItem("room6", "complete");
     };
 }
 
