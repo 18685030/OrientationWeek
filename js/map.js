@@ -54,10 +54,22 @@ function roomsComplete() {
                 document.getElementById("imglock8").src = "assets/unlock.png";
             }
 
+            //Shows trophy if all tasks have been completed
+            // if(room1 == 'complete' && room2 == 'complete' && room3 == 'complete' && room4 == 'complete' && room5 == 'complete' && room6 == 'complete' && room7 == 'complete' && room8 == 'complete'){
+            //     document.getElementById("trophy").style.visibility = "visible";
+            //     document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
+            // }
+
+            //Test to show how the end results works
+            if(room6 == 'complete' && room3 == 'complete'){
+                document.getElementById("trophy").style.visibility = "visible";
+                document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
+            }
 
         }
 
 
+//clears the locks form local storage
 function clearLocks() {
 
 localStorage.removeItem("room1");
@@ -71,9 +83,20 @@ localStorage.removeItem("room8");
 
 location.reload();
 return false;
-
 }
 
+
+
+//opens and closes pops ups
+$(".container .trophy").click(function(){
+    $(".completedOverlay").delay(100).fadeIn(100,function(){
+        console.log('animation complete')
+        }
+        );
+});
+$(".closeBtn").click(function(){
+    $(".completedOverlay").fadeOut(100 );
+});
 
 
 
@@ -123,6 +146,12 @@ function displaySlantBook() {
 function displayWindow() {
 
     document.getElementById("results").textContent = "Room 8: This is a window"
+
+}
+
+function displayTrophy() {
+
+    document.getElementById("results").textContent = "Congrats! Click the trophy to reveal your prize!"
 
 }
 

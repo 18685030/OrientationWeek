@@ -24,6 +24,14 @@
 
 <div class="message"><b>Welcome to your escape room! Look around and solve the 8 clues. The team with the most tasks solved in the quickest time wins! Good luck!!</div>
 
+
+<div class="completedOverlay">
+    
+    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/mW3byg_PzS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
 <div class="wrapper">
 
     <div class="lock">
@@ -76,6 +84,9 @@
         </div></a>
         <div class="container">
             <a href="room1.html"><div class="cup" onMouseover="displayCup();"></div></a>
+
+            <div class="trophy" id="trophy" onMouseover="displayTrophy();"></div>
+
             <a href="room2.html"><div class="table" onMouseover="displayTable();">
                 <span class="handle" id="handle1"></span>
                 <span class="handle" id="handle2"></span>
