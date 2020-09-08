@@ -113,7 +113,7 @@ var render = function () {
 
   // Score text styles
   ctx.fillStyle = "white";
-  ctx.font = "25px Helvetica";
+  ctx.font = "25px Major Mono Display";
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
   ctx.fillText("TOTAL: " + monstersCaught, 32, 32); //fill canvess with the score 'monsterscaught'
