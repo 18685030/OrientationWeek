@@ -98,7 +98,7 @@ console.log('initialized');
 
 // Check answer to challange
 
-var answer = SHA1("SoCS"); //asign result of SHA1 function to answer
+var answer = SHA1("SoCS"); //asign result of SHA1 function to answer: 8e7bfba9e19799a114779acb186357d7e4535d72
 //console.log(answer);
 
 function getAnswer() {
