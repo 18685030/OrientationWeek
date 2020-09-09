@@ -4,7 +4,7 @@
 //var answer = SHA1("55"); //asign result of SHA1 function to answer (55) - 8effee409c625e1a2d8f5033631840e6ce1dcb64 
 //console.log(answer);
 
-var answer = "55";
+var answer = "110110"; //55 in binafry = 110110
 
 function getAnswer() {
   var x = document.getElementById("answer");

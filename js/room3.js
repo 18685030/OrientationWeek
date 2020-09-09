@@ -155,7 +155,7 @@ function checklength(i) {
     return i;
 }
 var minutes, seconds, count, counter, timer;
-count = 13; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
+count = 11; //game time in seconds - add 1 sec so it starts on the time you wnat to count down from
 counter = setInterval(timer, 1000);
 
 // creates count down timer in minutes and seconds
@@ -167,25 +167,20 @@ function timer() {
     seconds = checklength(count - minutes * 60);
     if (count < 0) {
         clearInterval(counter);
+        //localStorage.setItem("monstersCaught", monstersCaught);
+
+        if (monstersCaught > 6) { //number of monstors caught in the game
+          var txt = "Julie is my favourite grandma. She is the oldest person in the familly but when I ask her how old she is,  she cunningly replied that she was 20 years old, only counting Saturdays and Sundays. How old is she?"; 
+          document.getElementById("results").innerHTML = txt; //write to html tag if the player scores highets score      
+        }
+
         return;
     }
     document.getElementById("timer").innerHTML = 'Time left: ' + seconds + ' ';
 
-// compares scores with 1 secs remainig to find last score and compare to highest score
-
-    if (count === 1) {
-
-        if (monstersCaught > 6) { //number of monstors caught in the game
-
-        var txt = "Answer: 01110011 01101111 01100011 01110011"; 
-        document.getElementById("congrats").innerHTML = txt; //write to html tag if the player scores highets score
-                
-          }
-    }
-
 // When count is at 0 secs the game will reload and repeat
 
-    if (count === 0 && monstersCaught < 6) { //when game hits 0 sec then it restarts
+    if (count === 0 && monstersCaught <= 6) { //when game hits 0 sec then it restarts
         location.reload();
     }
 }
@@ -194,7 +189,7 @@ function timer() {
 
 // Check answer to challange
 
-var answer = "01110011 01101111 01100011 01110011";
+var answer = "70";
 
 function getAnswer() {
   var x = document.getElementById("answer");

@@ -115,7 +115,7 @@ function displayTable() {
 
 function displayMonitor() {
 
-    document.getElementById("results").textContent = "Room 3: SoCS was the only choice!"
+    document.getElementById("results").textContent = "Room 3: That's a first!"
 
 }
 

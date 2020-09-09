@@ -566,12 +566,18 @@ body{
     background: red;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
+
+    background: linear-gradient(rgba(59, 13, 59, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
+
      */
 .window{
     position: absolute;
     width: 250px;
     height: 250px;
-    background: linear-gradient(rgba(59, 13, 59, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
+    
+    background: linear-gradient(rgba(255, 255, 0, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
+
+
     transform: translate(-50%, -50%);
     top: 25%;
     left: 75%;
