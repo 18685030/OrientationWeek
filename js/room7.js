@@ -101,7 +101,7 @@ $(document).ready(function() {
     }
     if (current.word.length <= current.lastSolvedIndex) {
 
-      text = "If 0-255 were a data type what would I be?";
+      text = "If 0-255 were an unsigned data type what would I be?";
       document.getElementById("results").innerHTML = text; //inserts 'text' into the yourscore ID element.
 
       //setWord();
