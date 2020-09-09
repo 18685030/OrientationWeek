@@ -178,5 +178,10 @@ function displayKnob1() {
 
 function displayKnob2() {
 
-    document.getElementById("results").textContent = "Bin: Reset Locks"
+    document.getElementById("results").textContent = "This is just a knob"
+}
+
+function displayBin() {
+
+    document.getElementById("results").textContent = "WARNING: Click this bin to restart the game"
 }

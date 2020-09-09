@@ -87,6 +87,25 @@ body{
   100% {background-color: green; box-shadow: 0 0 30px green;}
 }
 
+.bin{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background: #bbb;
+    /* top: 35%;
+    left: 65%; */
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%; 
+    transform: scale(0.3);
+    top: 56%;
+    left: 76%;
+}
+
+.bin:hover{
+ background-color: orange; 
+}
+
+
 .table{
     position: absolute;
     width: 400px;
@@ -470,11 +489,6 @@ body{
     z-index: 1;
 }
 
-
-#knob2:hover{
-  background-color: orange;
-}
-
 .lamp{
     position:absolute;
     width: 40px;
@@ -566,18 +580,12 @@ body{
     background: red;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
-
-    background: linear-gradient(rgba(59, 13, 59, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
-
      */
 .window{
     position: absolute;
     width: 250px;
     height: 250px;
-    
-    background: linear-gradient(rgba(255, 255, 0, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
-
-
+    background: linear-gradient(rgba(204, 204, 0, 0.719)10%, rgba(7, 7, 117, 0.733)50%, rgba(6, 0, 29, 0.712) 90%);
     transform: translate(-50%, -50%);
     top: 25%;
     left: 75%;
