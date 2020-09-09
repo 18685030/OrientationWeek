@@ -42,6 +42,11 @@ function getAnswer() {
         return false;
     }else{
         document.getElementById('answer').style.backgroundColor = "green"; //when answer is correct turn green
+
+        var wellDone; //sets the variable for the text output
+        wellDone = "Congratulations you've completed this task!";
+        document.getElementById("results").innerHTML = wellDone; //inserts 'text' into the yourscore ID eleme
+        
         localStorage.setItem("room4", "complete");
     };
 }

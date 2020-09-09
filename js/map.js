@@ -103,49 +103,49 @@ $(".closeBtn").click(function(){
 //Useful links to activties
 function displayCup() {
 
-    document.getElementById("results").textContent = "Room 1: They only go one way"
+    document.getElementById("results").textContent = "Task 1: They only go one way"
 
 }
 
 function displayTable() {
 
-    document.getElementById("results").textContent = "Room 2: This task is golden!"
+    document.getElementById("results").textContent = "Task 2: This task is golden!"
 
 }
 
 function displayMonitor() {
 
-    document.getElementById("results").textContent = "Room 3: That's a first!"
+    document.getElementById("results").textContent = "Task 3: That's a first!"
 
 }
 
 function displayLamphead() {
 
-    document.getElementById("results").textContent = "Room 4: Need to fight for this answer!"
+    document.getElementById("results").textContent = "Task 4: Need to fight for this answer!"
 
 }
 
 function displayFlatBook3() {
 
-    document.getElementById("results").textContent = "Room 5: Don't retire yet!"
+    document.getElementById("results").textContent = "Task 5: Don't retire yet!"
 
 }
 
 function displayPenstand() {
 
-    document.getElementById("results").textContent = "Room 6: The answer to everything!"
+    document.getElementById("results").textContent = "Task 6: The answer to everything!"
 
 }
 
 function displaySlantBook() {
 
-    document.getElementById("results").textContent = "Room 7: Half of a character!"
+    document.getElementById("results").textContent = "Task 7: Half of a character!"
 
 }
 
 function displayWindow() {
 
-    document.getElementById("results").textContent = "Room 8: It's not a binary choice!"
+    document.getElementById("results").textContent = "Task 8: It's not a binary choice!"
 
 }
 
@@ -183,5 +183,5 @@ function displayKnob2() {
 
 function displayBin() {
 
-    document.getElementById("results").textContent = "WARNING: Click this bin to restart the game"
+    document.getElementById("results").textContent = "WARNING: Clicking this bin will restart the game"
 }
