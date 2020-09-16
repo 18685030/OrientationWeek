@@ -103,7 +103,7 @@ $(".closeBtn").click(function(){
 //Useful links to activties
 function displayCup() {
 
-    document.getElementById("results").textContent = "Task 1: They only go one way"
+    document.getElementById("results").textContent = "Task 1: Two steps forward, one step back"
 
 }
 

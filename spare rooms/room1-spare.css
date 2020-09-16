@@ -1,0 +1,102 @@
+body{
+  background-color: #444;
+  user-select: none; //allows a user to selcet or not sleect the text
+}
+
+#cursor {
+  $size: 2px;
+  display: block;
+  position: absolute;
+  height: $size;
+  width: $size;
+  border-radius: ceil($size / 2);
+  background-color: transparent;
+  z-index: -1;
+  // hide on init
+  top: -100px;
+  left: -100px;
+}
+
+div.part1 {
+  position: absolute;
+  line-height: 2;
+  top: 10%;
+  color: #444;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+}
+
+div.part5 {
+  position: absolute;
+  top: 25%;
+  color: #444;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+}
+
+div.part3 {
+  position: absolute;
+  top: 45%;
+  color: #444;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+}
+
+div.part4 {
+  position: absolute;
+  top: 65%;
+  right: 0px;
+  color: #444;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  text-align: right;
+}
+
+div.part2 {
+  position: absolute;
+  top: 85%;
+  right: 0px;
+  display: inline-block;
+  color: #444;
+  font-family: 'Major Mono Display', monospace;
+  text-align: right;
+}
+
+
+
+input {
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  right: 5%;
+  left: 5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+::placeholder{
+  color: black;
+}
+
+#results{
+  position: absolute;
+  line-height: 2;
+  text-align: center;
+  bottom: 15%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  color: white;
+  display: inline-block;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+  z-index: 5;
+  font-size: 20px;
+}

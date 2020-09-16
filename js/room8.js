@@ -890,7 +890,7 @@ class Labirynthe {
             this.ctx.font = "20px Major Mono Display, monospace";
             this.ctx.fillText("Congratulations!", this.L / 2, this.H / 2 - 40);
             var text; //sets the variable for the text output
-            text = "What is 10101010 + 11001100?";
+            text = "What is the result of Task 6 + 11001100?";
             document.getElementById("results").innerHTML = text; //inserts 'text' into the yourscore ID element.
           }
           break;
@@ -962,7 +962,7 @@ class Labirynthe {
 
 // Check answer to challange
 
-var answer = "374"; //0101110110 in binary
+var answer = "246"; //42 + 204 (in binary)
 
 function getAnswer() {
   var x = document.getElementById("answer");
