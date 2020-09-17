@@ -10,8 +10,8 @@ $('.circle').hover(
         var hoverTime = (outTime - $(this).data('inTime'))/1000;        
         $('#results').html('Almost there, you followed for ' + hoverTime + ' seconds');
 
-        if (hoverTime > 30) { //number of monstors caught in the game
-          var txt = "Well done!, solve the puzzle to complet this task: <br> What is the next number in each series 4 8 32 512 131072 ?"; 
+        if (hoverTime > 30) { //how long you need to hover over the dot
+          var txt = "Well done!, solve the puzzle to complete this task: <br> What is the next number in the series 4 8 32 512 131072 ?"; 
           document.getElementById("results").innerHTML = txt; //write to html tag if the player scores highets score      
         }
 
