@@ -103,7 +103,7 @@ $(".closeBtn").click(function(){
 //Useful links to activties
 function displayCup() {
 
-    document.getElementById("results").textContent = "Task 1: Two steps forward, one step back"
+    document.getElementById("results").textContent = "Task 1: They can only go one way!"
 
 }
 
@@ -115,7 +115,7 @@ function displayTable() {
 
 function displayMonitor() {
 
-    document.getElementById("results").textContent = "Task 3: That's a first!"
+    document.getElementById("results").textContent = "Task 3: The thing that goes after the thing ..."
 
 }
 
@@ -133,7 +133,7 @@ function displayFlatBook3() {
 
 function displayPenstand() {
 
-    document.getElementById("results").textContent = "Task 6: The answer to everything!"
+    document.getElementById("results").textContent = "Task 6: Is everything the answer?"
 
 }
 
@@ -183,5 +183,5 @@ function displayKnob2() {
 
 function displayBin() {
 
-    document.getElementById("results").textContent = "WARNING: Clicking this bin will restart the game"
+    document.getElementById("results").textContent = "WARNING: Clicking this will delete your progress and take you to home"
 }

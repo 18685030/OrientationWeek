@@ -890,7 +890,7 @@ class Labirynthe {
             this.ctx.font = "20px Major Mono Display, monospace";
             this.ctx.fillText("Congratulations!", this.L / 2, this.H / 2 - 40);
             var text; //sets the variable for the text output
-            text = "What is the result of Task 6 + 11001100?";
+            text = "What is the result of Task 6 x 11001100?";
             document.getElementById("results").innerHTML = text; //inserts 'text' into the yourscore ID element.
           }
           break;
@@ -961,13 +961,16 @@ class Labirynthe {
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "246"; //42 + 204 (in binary)
+var answer = "50e68542dc4be53f00ed0641d3508e4f733c0eed"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{

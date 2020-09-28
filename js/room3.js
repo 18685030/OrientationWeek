@@ -170,7 +170,7 @@ function timer() {
         //localStorage.setItem("monstersCaught", monstersCaught);
 
         if (monstersCaught > 6) { //number of monstors caught in the game
-          var txt = "Julie is my favourite grandma. She is the oldest person in the familly but when I ask her how old she is,  she cunningly replied that she was 20 years old, only counting Saturdays and Sundays. How old is she?"; 
+          var txt = "What is the next in the series 940 839 738 637 ?"; 
           document.getElementById("results").innerHTML = txt; //write to html tag if the player scores highets score      
         }
 
@@ -188,13 +188,16 @@ function timer() {
 
 
 // Check answer to challange
+// Yep, it's not going to be that easy! Now stop cheating!!!
 
-var answer = "70";
+var answer = "4e86d8c0a0eb12d71f5fcb6ce71218482465aae7"; //SHA1 value of correct answer
 
 function getAnswer() {
-  var x = document.getElementById("answer");
+  var y = document.getElementById("answer");
 
-  if(x.value != answer){
+  var x = SHA1(y.value);
+
+  if(x != answer){
         document.getElementById('answer').style.backgroundColor = "red"; //when answer is incorrcet turn red
         return false;
     }else{
