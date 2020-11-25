@@ -20,4 +20,6 @@ The virtual escape room has been compiled with several key themes using many peo
 
 1. Room 8: Marble labyrinth game https://codepen.io/Gthibaud/pen/zNwgmZ
 
+## Links to an Article on the Escape Room
+1. [University of Lincoln AgriFoRwArds Student Blog Article](https://agriforwards-students.blogs.lincoln.ac.uk/2020/11/25/agriforwards-students-escape-lockdown-routine/)
 
